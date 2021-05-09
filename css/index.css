@@ -1,0 +1,153 @@
+body,html {
+    overflow-x: hidden;
+    background: var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+
+    --white: #fff;
+    --white-100: #ebe8e8;
+
+    --black: #000;
+    --grey-900: #2e2e2e; 
+    
+
+    --background: #F4F2EF;
+    --orange: #FFC301;
+    --red: #FF5F4F;
+    --brown: #C57047;
+
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_items {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.links h2 {
+    color: var(--white);
+}
+
+.links a {
+    color: var(--white);
+    font-size: 10pt;
+    transition: .3s;
+}
+
+.links a:hover {
+    color: var(--orange);
+}
+
+.header_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_buttons .contact {
+    width: 135px;
+    padding: 11px;
+    border-radius: 20px;
+    font-size: 9pt;
+    font-weight: 600;
+    background: var(--red);
+    color: var(--white);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header_buttons .contact:hover {
+    transform: scale(1.03);
+}
+
+/* container */
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* cover */
+
+.cover {
+    width: 100%;
+    height: 600px;
+    background: url('../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover_items {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 60px;
+}
+
+.cover_items h2 {
+    font-size: 24pt;
+    color: var(--white-100);
+    margin-bottom: 10px;
+}
+
+.cover_items p {
+    font-size: 11pt;
+    color: var(--white-100);
+    width: 530px;
+    margin-bottom: 40px;
+}
+
+.cover_items button {
+    width: 150px;
+    padding: 12px;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 11pt;
+    border-radius: 23px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.cover_items button:hover {
+    width: 160px;
+}
