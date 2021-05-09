@@ -4,6 +4,19 @@ body,html {
     padding-bottom: 500px;
 }
 
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(187, 187, 187);
+    border-radius: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +82,8 @@ header {
 
 .links a {
     color: var(--brown-800);
-    font-size: 10pt;
+    font-size: 11pt;
+    font-weight: 600;
     transition: .3s;
 }
 
@@ -247,7 +261,7 @@ header {
 .featured_small {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 17px;
+    row-gap: 20px;
 }
 
 .featured_card {
@@ -313,7 +327,7 @@ header {
 /* big card */
 
 .featured_card_big {
-    width: 645px;
+    width: 648px;
     background: var(--white);
     display: flex;
     align-items: center;
@@ -382,7 +396,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 36px;
+    padding: 33px;
     border-radius: 15px;
     cursor: pointer;
     transition: .3s;
