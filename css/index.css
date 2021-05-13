@@ -24,6 +24,7 @@ body,html {
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    outline: none;
 }
 
 :root {
@@ -467,7 +468,6 @@ header {
 
 .about_title {
     width: 100%;
-    padding-left: 110px;
 }
 
 .about_title .light_title {
@@ -477,7 +477,7 @@ header {
 }
 
 .about_title .bold_title {
-    font-size: 30pt;
+    font-size: 40pt;
     font-weight: 800;
     margin-top: -20px;
     color: var(--brown-800);
@@ -494,7 +494,6 @@ header {
 .image_section img {
     width: 400px;
     box-shadow: 20px -20px 0px 0px var(--brown-800);
-    margin-left: 110px;
     margin-right: 100px;
 }
 
@@ -517,7 +516,7 @@ header {
 }
 
 .image_text button {
-    width: 200px;
+    width: 250px;
     padding: 11px;
     background: var(--brown-800);
     font-weight: bold;
@@ -542,7 +541,6 @@ header {
     flex-direction: column;
     align-items: flex-end;
     margin-top: 40px;
-    padding-right: 110px;
     margin-bottom: 80px;
 }
 
@@ -561,7 +559,7 @@ header {
 
 .delivery_section {
     width: 1300px;
-    padding-right: 110px;
+
     display: flex;
     justify-content: flex-end;
 }
@@ -641,4 +639,186 @@ header {
 .delivery_text_section button:hover {
     background: var(--back);
     color: var(--brown-800);
+}
+
+/* contact form */
+
+.contact_us {
+    width: 1300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.contact_infos {
+    width: 500px;
+    padding: 40px;
+    background: var(--brown-800);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border-left: 10px solid var(--orange); */
+    box-shadow: 20px -20px 0px 0px var(--orange);
+    margin-right: 100px;
+}
+
+.contact_infos h2 {
+    color: var(--white-100);
+    font-size: 15pt;
+    margin-bottom: 30px;
+}
+
+.contact_infos > .contact_infos_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contact_infos_item span {
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--white-100);
+    margin-right: 10px;
+}
+
+.contact_infos_item p {
+    font-size: 10pt;
+    color: var(--white-100);
+}
+
+.social_title {
+    margin-top: 137px;
+}
+
+.contact_infos_social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ig_icon {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background: var(--white);
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.ig_icon:hover {
+    transform: scale(1.04);
+}
+
+.ig_icon svg {
+    width: 30px;
+    height: 30px;
+    stroke: var(--brown-800);
+    stroke-width: 2;
+}
+
+.fb_icon {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background: var(--white);
+    transition: .3s;
+}
+
+.fb_icon:hover {
+    transform: scale(1.04);
+}
+
+.fb_icon svg {
+    width: 30px;
+    height: 30px;
+    stroke: var(--brown-800);
+    stroke-width: 1.5;
+}
+
+.contact_form {
+    width: 500px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact_form h2 {
+    color: var(--brown-800);
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+
+.contact_form p {
+    color: var(--brown-800);
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contact_form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact_form form label {
+    font-weight: bold;
+    color: var(--brown-800);
+    font-size: 10pt;
+}
+
+.contact_form form input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 3px solid var(--background);
+    margin-left: -3px;
+}
+
+.contact_form form input:focus {
+    border: 3px solid var(--brown-800);
+}
+
+.contact_form form textarea {
+    width: 100%;
+    padding: 11px;
+    resize: none;
+    height: 100px;
+    border: 3px solid var(--background);
+    margin-left: -3px;
+}
+
+.contact_form form textarea:focus {
+    border: 3px solid var(--brown-800);
+}
+
+.contact_form form button {
+    width: 100%;
+    padding: 19px;
+    margin-top: 43px;
+    cursor: pointer;
+    background: var(--orange);
+    font-weight: bold;
+    color: var(--white);
+    transition: .3s;
+}
+
+.contact_form form button:hover {
+    transform: scale(1.01);
 }
