@@ -273,10 +273,11 @@ header {
     border-radius: 15px;
     cursor: pointer;
     transition: .3s;
+    position: relative;
 }
 
 .featured_card:hover {
-    transform: scale(1.01);
+    transform: scale(1.005);
 }
 
 .card_image {
@@ -324,6 +325,25 @@ header {
     font-size: 9pt;
 }
 
+.featured_card span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    color: var(--green);
+    font-weight: 500;
+    font-size: 25px;
+    z-index: 99;
+}
+
+.featured_card span:hover {
+    background: var(--white-100);
+}
+
+
 /* big card */
 
 .featured_card_big {
@@ -335,6 +355,7 @@ header {
     border-radius: 15px;
     cursor: pointer;
     transition: .3s;
+    position: relative;
 }
 
 .card_image_big {
@@ -386,6 +407,24 @@ header {
     font-weight: bold;
     margin-top: -5px;
     font-size: 20pt;
+}
+
+.featured_card_big span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    color: var(--green);
+    font-weight: 500;
+    font-size: 35px;
+    z-index: 99;
+}
+
+.featured_card_big span:hover {
+    background: var(--white-100);
 }
 
 /* see more */
