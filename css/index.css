@@ -261,7 +261,7 @@ header {
 .featured_small {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 21px;
 }
 
 .featured_card {
@@ -269,11 +269,11 @@ header {
     background: var(--white);
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-radius: 15px;
+    padding: 8px;
     cursor: pointer;
     transition: .3s;
     position: relative;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03);
 }
 
 .featured_card:hover {
@@ -283,7 +283,6 @@ header {
 .card_image {
     width: 80px;
     height: 80px;
-    border-radius: 15px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -330,7 +329,6 @@ header {
     right: 10px;
     bottom: 10px;
     padding: 5px;
-    border-radius: 5px;
     cursor: pointer;
     transition: .3s;
     color: var(--green);
@@ -349,19 +347,18 @@ header {
 .featured_card_big {
     width: 648px;
     background: var(--white);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.01);
     display: flex;
     align-items: center;
     padding: 10px;
-    border-radius: 15px;
     cursor: pointer;
-    transition: .3s;
+    transition: .5s;
     position: relative;
 }
 
 .card_image_big {
     width: 196px;
     height: 196px;
-    border-radius: 15px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -414,7 +411,6 @@ header {
     right: 10px;
     bottom: 10px;
     padding: 5px;
-    border-radius: 5px;
     cursor: pointer;
     transition: .3s;
     color: var(--green);
@@ -432,11 +428,11 @@ header {
 .see_more {
     width: 315px;
     background: var(--white);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 33px;
-    border-radius: 15px;
+    padding: 34px;
     cursor: pointer;
     transition: .3s;
     font-weight: 600;
@@ -826,7 +822,7 @@ header {
 /* footer */
 
 footer {
-    margin-top: 250px;
+    margin-top: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -928,3 +924,236 @@ footer {
 .footer_footer a:hover {
     color: var(--brown);
 }
+
+/* cart_button */
+
+.cart_button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--red);
+    font-weight: bold;
+    color: white;
+    font-size: 9pt;
+    z-index: 100;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cart_button:hover {
+    padding-right: 30px;
+}
+
+/* cart_div */
+
+#cart_item {
+    position: fixed;
+    right: -550px;
+    top: 0;
+    transition: .5s;
+}
+
+.side_cart {
+    width: 380px;
+    height: 100vh;
+    padding: 20px;
+    background: var(--white);
+    border-left: 40px solid var(--orange);
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header_cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header_cart .header_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.header_cart .header_title span {
+    font-weight: bold;
+    color: var(--brown-800);
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.header_cart .header_title span:hover {
+    background: #ebe8e8;
+}
+
+.header_cart .header_title h2 {
+    font-size: 14pt;
+    color: var(--brown-800);
+}
+
+hr {
+    width: 100% !important;
+    height: 1px !important;
+    background: var(--white-100) !important;
+    margin: 10px 0;
+}
+
+.body_cart {
+    padding: 0 10px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto !important;
+    padding-bottom: 20px;
+}
+
+.item_cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header_item_cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header_item_cart .name_item {
+    font-weight: bold;
+    font-size: 9pt;
+    width: 200px;
+    color: var(--brown-800);
+}
+
+.header_item_cart .price_item {
+    font-weight: 600;
+    font-size: 9pt;
+    color: var(--green);
+}
+
+.body_item_cart {
+    display: flex;
+    margin: 5px 0px;
+    font-weight: 500;
+    color: #9c9c9c;
+    font-size: 8pt;
+}
+
+.footer_item_cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_item_cart button {
+    background: none;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 9pt;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer_item_cart button:hover {
+    color: #c94a3f;
+    transform: scale(1.04);
+}
+
+.footer_item_cart .manage_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    width: 80px;
+    color: #888888;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.footer_item_cart .manage_items span {
+    padding: 3px;
+    font-size: 20px !important;
+    background: #f3f3f3;
+    border-radius: 4px;
+    color: #888888;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: -3px;
+}
+
+.footer_item_cart .manage_items span:hover {
+    background: #bdbdbd;
+}
+
+.footer_cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.item_footer_cart {
+    width: 100%;
+    display: flex;   
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item_footer_cart .name {
+    font-weight: 600;
+    color: #888888;
+    font-size: 10pt;
+}
+
+.item_footer_cart .name_b {
+    font-weight: bold;
+    color: #535353;
+    font-size: 11pt;
+}
+
+.item_footer_cart .value {
+    font-weight: 600;
+    color: #888888;
+    font-size: 10pt;
+}
+
+.item_footer_cart .value_b {
+    font-weight: bold;
+    color: var(--green);
+    font-size: 11pt;
+}
+
+.footer_cart button {
+    width: 100%;
+    padding: 12px;
+    background: #43e09f;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 9pt;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer_cart button:hover {
+    background: #32a374;
+}
+
+
