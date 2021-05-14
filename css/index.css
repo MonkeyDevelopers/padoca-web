@@ -1,7 +1,6 @@
 body,html {
     overflow-x: hidden;
     background: var(--background);
-    padding-bottom: 500px;
 }
 
 *::-webkit-scrollbar {
@@ -101,17 +100,19 @@ header {
 .header_buttons .contact {
     width: 135px;
     padding: 11px;
-    border-radius: 20px;
     font-size: 9pt;
     font-weight: 600;
     background: var(--red);
     color: var(--white);
     cursor: pointer;
-    transition: .3s;
+    transition: .5s;
+    border: 3px solid var(--background);
 }
 
 .header_buttons .contact:hover {
-    transform: scale(1.03);
+    border: 3px solid var(--red);
+    background: var(--background);
+    color: var(--red);
 }
 
 /* container */
@@ -164,7 +165,6 @@ header {
     background: var(--orange);
     color: var(--white);
     font-size: 11pt;
-    border-radius: 23px;
     transition: .3s;
     font-weight: 600;
     cursor: pointer;
@@ -200,13 +200,12 @@ header {
 }
 
 .filter_products a {
-    width: 180px;
+    width: 190px;
     padding: 7px;
     margin-bottom: 10px;
     display: flex;
     border: 1px solid rgb(219, 219, 219);
     align-items: center;
-    border-radius: 24px;
     font-size: 10pt;
     font-weight: 600;
     padding-left: 15px;
@@ -216,7 +215,7 @@ header {
 }
 
 .filter_products a:hover {
-    width: 190px;
+    width: 200px;
 }
 
 .filter_products a svg {
@@ -800,6 +799,7 @@ header {
     padding: 11px;
     resize: none;
     height: 100px;
+    border-radius: 4px;
     border: 3px solid var(--background);
     margin-left: -3px;
 }
@@ -821,4 +821,110 @@ header {
 
 .contact_form form button:hover {
     transform: scale(1.01);
+}
+
+/* footer */
+
+footer {
+    margin-top: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    box-shadow: 0px -5px 3px 0px rgba(0, 0, 0, 0.014);
+
+}
+
+.footer_items {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_column {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer_column img {
+    width: 150px;
+}
+
+.footer_column h2 {
+    font-size: 12pt;
+    margin-bottom: 10px;
+    color: var(--brown-800);
+}
+
+.footer_column iframe {
+    width: 100%;
+}
+
+.footer_column p {
+    width: 280px;
+    font-size: 10pt;
+    font-weight: bold;
+    color: var(--brown-800);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer_column p span {
+    margin-right: 8px;
+}
+
+.footer_column a {
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--brown-800);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .3s;
+    margin-bottom: 5px;
+}
+
+.footer_column a:hover {
+    color: var(--brown);
+}
+
+.footer_column a svg {
+    width: 25px;
+    height: 25px;
+    stroke: var(--brown-800);
+    stroke-width: 1.8;
+    margin-right: 5px;
+    transition: .3s;
+}
+
+.footer_column a:hover svg {
+    stroke: var(--brown);
+}
+
+.footer_footer {
+    width: 1300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_footer a {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--brown-800);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .3s;
+}
+
+.footer_footer a:hover {
+    color: var(--brown);
 }
