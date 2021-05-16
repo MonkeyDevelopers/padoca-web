@@ -1,15 +1,9 @@
-function cartSidebar() {
-
-
-    // var sidebar = document.getElementsByClassName("side_cart");
-
-
-}
-
 var button = document.getElementById("cart_button");
 var sidebar = document.getElementById("cart_item");
 
 window.addEventListener('click', function(e){   
+
+    
     if (document.getElementById('cart_button').contains(e.target)){
         if(sidebar.style.right == "-550px") {
             sidebar.style.right = "0px";
@@ -36,5 +30,6 @@ window.addEventListener('click', function(e){
             button.style.right = "40px";
         }
     }
+
 
 });
