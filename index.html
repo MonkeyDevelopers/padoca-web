@@ -86,91 +86,59 @@
             <!-- products -->
             <div class="grid_products">
 
+                <div class="grid_products_big">
 
-                <div class="featured_big">
-                    <a href="#" class="featured_card_big">
-                        <div class="card_image_big">
+                    <div class="featured_product">
+                        <div class="product_image">
                             <img src="assets/products/product-1.jpg" alt="">
                         </div>
-                        <div class="card_infos_big">
-                            <h2>Tapioca Recheada com frango</h2>
-                            <div class="price_big">
-                                <p class="price_big_title">Valor</p>
-                                <p class="price_big_value">R$50,00</p>
+                        <div class="product_infos">
+                            <div class="product_text">
+                                <h2>Tapioca Recheada com Frango</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat corporis facilis excepturi, praesentium totam dignissimos nam aspernatur modi sapiente!</p>
+                            </div>
+                            <div class="product_price">
+                                <div class="price_column">
+                                    <p class="title">Valor</p>
+                                    <p class="price">R$50,00</p>
+                                </div>
+                                <p class="btn_add_to_cart">
+                                    Adicionar ao Carrinho
+                                    <span class="material-icons-outlined">
+                                        add_shopping_cart
+                                    </span>
+                                </p>
                             </div>
                         </div>
-                        <span class="material-icons">add_shopping_cart</span>
-                    </a>
-                    <div class="featured_big_small">
-                        <a href="#" class="featured_card">
-                            <div class="card_image">
-                                <img src="assets/products/product-1.jpg" alt="">
+
+                    </div>
+
+                </div>
+                <div class="grid_products_small">
+
+                    <div class="featured_product">
+                        <div class="product_image">
+                            <img src="assets/products/product-1.jpg" alt="">
+                        </div>
+                        <div class="product_infos">
+                            <h1>Tapioca Recheada com Frango</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat corporis facilis excepturi, praesentium totam dignissimos nam aspernatur modi sapiente!</p>
+                            <div class="product_price">
+                                <p class="title">Valor</p>
+                                <p class="price">R$50,00</p>
                             </div>
-                            <div class="card_infos">
-                                <h2>Tapioca Recheada com frango</h2>
-                                <div class="price">
-                                    <p class="price_title">Valor</p>
-                                    <p class="price_value">R$50,00</p>
-                                </div>
-                            </div>
-                            <span class="material-icons">add_shopping_cart</span>
-                        </a>
-                        <a href="#" class="featured_card">
-                            <div class="card_image">
-                                <img src="assets/products/product-1.jpg" alt="">
-                            </div>
-                            <div class="card_infos">
-                                <h2>Tapioca Recheada com frango</h2>
-                                <div class="price">
-                                    <p class="price_title">Valor</p>
-                                    <p class="price_value">R$50,00</p>
-                                </div>
-                            </div>
-                            <span class="material-icons">add_shopping_cart</span>
-                        </a>
+                        </div>
+                    </div>
+
+                    <div class="featured_product">
+                        <p>Ver Mais</p>
+                        <span class="material-icons-outlined">
+                            arrow_forward
+                        </span>
                     </div>
 
                 </div>
 
-
-                <div class="featured_small">
-                    <a href="#" class="see_more">
-                        Ver Mais
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <line x1="13" y1="18" x2="19" y2="12" />
-                            <line x1="13" y1="6" x2="19" y2="12" />
-                        </svg>
-                    </a>
-                    <a href="#" class="featured_card">
-                        <div class="card_image">
-                            <img src="assets/products/product-1.jpg" alt="">
-                        </div>
-                        <div class="card_infos">
-                            <h2>Tapioca Recheada com frango</h2>
-                            <div class="price">
-                                <p class="price_title">Valor</p>
-                                <p class="price_value">R$50,00</p>
-                            </div>
-                        </div>
-                        <span class="material-icons">add_shopping_cart</span>
-                    </a>
-                    <a href="#" class="featured_card">
-                        <div class="card_image">
-                            <img src="assets/products/product-1.jpg" alt="">
-                        </div>
-                        <div class="card_infos">
-                            <h2>Tapioca Recheada com frango</h2>
-                            <div class="price">
-                                <p class="price_title">Valor</p>
-                                <p class="price_value">R$50,00</p>
-                            </div>
-                        </div>
-                        <span class="material-icons">add_shopping_cart</span>
-                    </a>
-                </div>
-                <!-- product -->
             </div>
 
         </div>
@@ -282,12 +250,11 @@
 
     <!-- buttons -->
     <div class="cart_button" id="cart_button">
-        <p>Meu Carrinho</p>
         <span class="material-icons-outlined">shopping_cart</span>
     </div>
 
     <!-- cart_section -->
-    <div style="right: -550px" class="side_cart" id="cart_item">
+    <div style="right: -340px" class="side_cart" id="cart_item">
         <div class="header_cart">
             <div class="header_title">
                 <span class="material-icons-outlined" id="close_card">
@@ -468,6 +435,15 @@
                 <p class="value_b">R$60,00</p>
             </div>
             <button>Finalizar Compra</button>
+        </div>
+
+        <div class="open_cart_bar" id="open_cart_bar">
+            <span class="material-icons-outlined" id="icon_close">
+                arrow_forward_ios
+            </span>
+            <span class="material-icons-outlined" id="icon_open">
+                arrow_back_ios
+            </span>
         </div>
     </div>
 
